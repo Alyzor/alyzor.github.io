@@ -124,6 +124,8 @@
 @media(max-width:640px) {
     .header--main::after{
         height:60vh;
+        display:grid;
+        align-items: center;
     }
 
     .header--banner img{
@@ -133,6 +135,7 @@
 
     .header--banner{
         font-size: 1.2rem;
+        width:90vw;
         height:fit-content;
         overflow:hidden;
         max-height:50vh;
