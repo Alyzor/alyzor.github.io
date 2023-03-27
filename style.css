@@ -3,7 +3,7 @@
     border:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#333;
-    font-size:16px;
+    box-sizing: border-box;
 }
 
 /* .header--main {
@@ -125,9 +125,17 @@
     .header--main::after{
         height:60vh;
     }
+
+    .header--banner img{
+        width:10rem;
+        height:10rem;
+    }
+
     .header--banner{
+        font-size: 1.2rem;
         height:fit-content;
-        max-height:40vh;
+        overflow:hidden;
+        max-height:50vh;
         top:5vh;
         border-radius:10%;
         background-color:rgba(0,0,0,0.5);
