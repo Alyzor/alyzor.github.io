@@ -21,14 +21,16 @@
           </p>
         </div>
       </div>
-      <div class="abtme">
-        <div class="aboutme--drawer">
+      <div class="aboutme--drawer " id="about-drawer" onclick="toggle()">
+      <p>About me:</p>
+      <i class="fa-solid fa-angle-down fa-2x"></i>
+      </div>
+      <div class="abtme " id="main">
         <i class="fa-solid fa-address-card"></i>
         <p>
             I've been around computers and technology in general for as long as I can remember. I've always had a big interest so I started noticing that programming existed, and gained an even bigger interest in the area. Ever since, I've finished High School on a Professional Course on Management Informatics, and I'm currently studying @ISTEC, on a Technical Superior Professional Course on Software Development.
             Down below, you can find some of my socials/methods to contact me, as well as my GitHub, where you can check my growth and projects in this area!
         </p>     
-    </div>
       </div>
       <div class="socials">
         <a href="https://www.linkedin.com/in/pedro-pereira-a567b9207/">
@@ -53,6 +55,17 @@
       <div class="footer">
         <p>Created using HTML, CSS. and hosting on GitHub Pages!</p>
       </div>
-    </div>
+    </div>  
+    <script type="text/javascript">
+      var about = document.getElementById("main");
+
+      function toggle() {
+        about.classList.toggle("clicked")
+      }
+      /* about.addEventListener(click, () => {
+        about.classList.toggle("clicked");
+      }); */
+  </script>
   </body>
+
 </html>

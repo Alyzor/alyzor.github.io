@@ -73,6 +73,10 @@
     font-size:8rem;
 } 
 
+.aboutme--drawer{
+    visibility: hidden;
+    height:0;
+}
 
 .header--main{
     display:grid;
@@ -155,5 +159,47 @@
         row-gap:1rem;
         justify-content:center;
         align-content:center;
+    }
+
+    .aboutme--drawer{
+        z-index: 1;
+        padding:1rem;
+        visibility: visible;
+        width:100vw;
+        height:fit-content;
+        display:grid;
+        grid-template-columns: 6fr 1fr;
+        border-bottom:solid 1px black;
+        box-shadow:0px 1px 4px black;
+        align-items: center;
+        padding-right:0.5rem;
+    }
+
+    .clicked{
+        height:fit-content !important;
+        padding:1rem !important;
+        visibility:visible !important;
+        transition:all .1s ease-in-out;
+    }    
+
+    .abtme{
+        visibility: hidden;
+        height:0;
+        padding:0;
+        display:flex;
+        flex-direction:column;
+        position: relative;
+        transition:all .1s ease-in-out;
+    }
+
+    .abtme p{
+        padding:0;
+        border:0;
+        text-align:center;
+    }
+    .abtme i{
+        visibility: hidden;
+        height:0;
+        padding:0;
     }
 }
